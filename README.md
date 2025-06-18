@@ -62,12 +62,12 @@ This landing page is being built using:
 
 ## 📦 Structure
 
-📁 assets → Images, icons, logos, and videos
-📁 css → Style sheets
-📁 js → JavaScript files
-📄 index.html → Homepage
-📄 about.html → About the POS system
-📄 contact.html → Support or contact page
+- 📁 assets → Images, icons, logos, and videos
+- 📁 css → Style sheets
+- 📁 js → JavaScript files
+- 📄 index.html → Homepage
+- 📄 about.html → About the POS system
+- 📄 contact.html → Support or contact page
 
 ## 💻 Getting Started
 

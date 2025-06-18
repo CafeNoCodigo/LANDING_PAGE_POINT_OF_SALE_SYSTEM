@@ -31,11 +31,11 @@
 
 **LANDING_PAGE_POINT_OF_SALE_SYSTEM** is the official landing page and support website for the Java-based Point of Sale system. The website serves as a digital front door for the POS application, providing:
 
-- ✅ An overview of the system and its features  
-- ✅ Visuals and screenshots of the software  
-- ✅ Download links and update instructions  
-- ✅ User guides and documentation  
-- ✅ Contact or support information  
+- An overview of the system and its features  
+- Visuals and screenshots of the software  
+- Download links and update instructions  
+- User guides and documentation  
+- Contact or support information  
 
 This site is ideal for promoting the POS system to potential users or clients.
 
@@ -62,3 +62,26 @@ This landing page is being built using:
 
 ## 📦 Structure
 
+📁 assets → Images, icons, logos, and videos
+📁 css → Style sheets
+📁 js → JavaScript files
+📄 index.html → Homepage
+📄 about.html → About the POS system
+📄 contact.html → Support or contact page
+
+## 💻 Getting Started
+
+### Requirements
+
+To run the project locally:
+
+```bash
+git clone https://github.com/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM.git
+cd LANDING_PAGE_POINT_OF_SALE_SYSTEM
+``` 
+*Then open index.html in your browser, or use the Live Server extension in VS Code for a better development experience.*
+
+## 📝 License
+This project is licensed under the Apache 2.0 License. See the LICENSE file for details.
+
+Made with 💜 by Fabio, see my linkedin👉 [https://www.linkedin.com/in/fabiao-chirindza-mainato/]

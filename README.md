@@ -46,7 +46,8 @@ This landing page is being built using:
 - HTML5  
 - CSS3  
 - JavaScript  
-- Bootstrap (or a similar CSS framework)  
+- Bootstrap (or a similar CSS framework)
+- ReactJS
 - GitHub Pages / Netlify / Vercel (for deployment)  
 
 > *Depending on project needs, more technologies may be added.*

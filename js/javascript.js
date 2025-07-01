@@ -16,14 +16,14 @@ cta_btn.onmousemove = function(e){
 // JavaScript para o menu responsivo e dropdowns
 document.addEventListener('DOMContentLoaded', function() { 
         mobile_menu_btn.addEventListener('click', function() {
-            nav_links.classList.toggle('active');
+            nav_links.classList.toggle('.active');
         });
 
         dropdowns.forEach(dropdown => {
             nav_links.addEventListener('click', function(e) {
                 if (window.innerWidth <= 768) {
                     e.preventDefault();
-                    dropdowns.classList.toggle('active');
+                    dropdowns.classList.toggle('.active');
                 }
             });
         });
@@ -33,9 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
             if (window.innerWidth <= 768 && 
                 !e.target.closest('.nav-links') && 
                 !e.target.closest('.mobile-menu-btn')) {
-                nav_links.classList.remove('active');
+                nav_links.classList.remove('.active');
                 dropdowns.forEach(dropdowns => {
-                    dropdowns.classList.remove('active');
+                    dropdowns.classList.remove('.active');
                 });
             }
         });

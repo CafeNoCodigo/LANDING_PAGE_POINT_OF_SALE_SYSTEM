@@ -29,31 +29,123 @@ section {
     }
 
     .section-layout {
-        @apply md:flex md:flex-row flex-col items-center justify-center md:pt-30 pt-5;
+        @apply md:flex md:flex-row flex-col items-center justify-center w-full min-h-screen;
     }
 
     .h1 {
-        @apply text-4xl text-white;
+        @apply text-4xl text-amber-100 font-bold text-shadow-lg;
     }
 
     .p {
-        @apply text-xl text-white;
+        @apply text-2xl text-amber-100 text-shadow-lg;
     }
-    /*Hero Section Start*/
+
+    .btn {
+        @apply 
+         cursor-pointer 
+         md:hover:bg-amber-100 
+         md:hover:text-black 
+         bg-black 
+         md:transition-colors duration-700 ease-in-out  
+         md:rounded-full rounded-2xl 
+         md:ml-0
+         text-amber-100 
+         md:tracking-widest tracking-wide;
+    }
+
+    /*NavBar layer components Starts*/
+    .nav-bar {
+        @apply fixed flex md:flex-row items-center justify-center
+         md:gap-5 md:w-4/5 w-full md:transform md:-translate-x-1/2
+         h-1/12 md:mt-7 md:p-2 p-5
+         md:left-1/2 md:rounded-3xl
+         text-amber-100
+         md:border
+         z-9999
+         border-black;
+         background-color: var(--navBar-color);
+    }
+
+    .nav-bar-a {
+        @apply md:text-xl cursor-pointer relative hidden;
+    }
+
+    .logo {
+        @apply md:text-xl text-xs md:hover:scale-110 md:transition-transform duration-500 ease-in-out;
+    }
+
+    .nav-bar-btn {
+        @apply px-5 pt-1 pb-1 ml-10 md:ml-5 text-xl;
+    }
+    /*NavBar layer components Ends*/
+
+    /*Hero Section layer components Starts*/
+    .span-hero-h1 {
+        @apply md:tracking-tighter;
+    }
+
     .hero-section {
-        @apply w-full min-h-screen;
-        background-image: linear-gradient(to right, #5de0e6, #004aad, #776c7f);
+        background-image: linear-gradient(to right, #2f7275, #003983, #494150);
     }
 
     .hero-img {
-        @apply md:w-[100rem] w-[20rem] ml-10 md:ml-0 md:pl-10;
+        @apply md:w-[100rem] w-[20rem] ml-10 md:ml-0 md:pl-5 relative;
     }
+
     .hero-p {
-        @apply mb-16 text-2xl;
+        @apply mb-10 text-2xl ;
     }
 
     .hero-h1 {
-        @apply mb-5 md:text-7xl text-5xl;
+        @apply mb-5 md:text-6xl text-4xl;
     }
-    /*Hero Section Ends*/
+    /*Hero Section layer components Ends*/
+
+    /*Resource section starts*/
+    .resource-element {
+        @apply  rounded-full mb-10 text-shadow-lg;
+        background-color: var(--element-decoration);
+    }
+
+    /* Tailwind classes aplicadas via @apply ou diretamente */
+    .resources-p {
+        @apply border border-white p-5 rounded-2xl text-amber-100 mb-10 w-80 min-h-[200px] text-justify;
+    }
+
+    .resource-img {
+        @apply flex flex-col items-center w-80 min-h-[300px] text-center;
+    }
+
+    /*Resource section Ends*/
+
+    .about {
+        @apply rounded-2xl p-4 md:p-6 md:mr-25 md:ml-25 cursor-pointer md:hover:scale-110 md:transition-transform duration-400 ease-in-out md:border;
+        background-color: var(--element-decoration);
+    }
 }
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  .text-shadow-lg {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/*NavBar css Starts*/
+.underline-animated::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: currentColor; /* usa cor do texto */
+    transition: width 0.3s ease;
+}
+
+.underline-animated:hover::after {
+    width: 100%;
+}
+/*NavBar css Ends*/

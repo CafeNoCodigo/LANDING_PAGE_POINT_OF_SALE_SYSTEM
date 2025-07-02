@@ -1,17 +1,47 @@
-import React from 'react'
-
+import { motion } from "framer-motion";
 const Hero = () => {
+
   return (
     <section id="hero" className='section hero-section'>
-        <div className='section-layout md:gap-5'>
-            <div>
-              <div className='section-txt'>
-                <h1 className='h1 hero-h1'>Controle Seu negócio como nunca antes fez</h1>
-                <p className='p hero-p '>Pare de anotar suas vendas em cadernos, blocos de notas ou estensas planilhas que complicam o seu negócio</p>
-              </div>
-            </div>
-            <div className='hero-img'>
-              <img className="md:ml-6 md:mt-7 scale-120" src="/images/hero-img-removebg-preview.png" alt="Tela Inicial da App" />
+        <div className='section-layout md:gap-3 md:pt-25 pt-10'>
+              <motion.div
+                className='section-txt'
+              >
+                <motion.h1 
+                initial={{ x: -200, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 2, ease: "easeOut", delay: 0.2}}
+                className='h1 hero-h1 text-shadow-lg'> <span className='span-hero-h1'>Controle Seu</span> negócio como nunca antes fez
+                </motion.h1>
+                <motion.p 
+                className='p hero-p text-shadow'
+                initial={{ x: -200, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 2, ease: "easeOut", delay: 0.6}}
+                >Pare de anotar suas vendas em cadernos, blocos de notas ou estensas planilhas que complicam o seu negócio</motion.p>
+                <motion.button 
+                initial={{ x: -200, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 2, ease: "easeOut", delay: 1}}
+                className="btn">Saiba Mais</motion.button>
+              </motion.div>
+            <div className='hero-img group relative'>
+              <motion.img
+                src="/images/bg.png"
+                alt="Efeito de fundo"
+                className="absolute inset-0 w-full h-full object-cover z-0 opacity-40 scale-115 pl-20 pb-10 blur-md"
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ scale: 1.2, opacity: 0.6 }}
+                transition={{ duration: 2, ease: "easeOut", delay: 2.3 }}
+              />
+              <motion.img 
+                className="md:ml-6 md:mt-7 relative z-[1] scale-120" 
+                src="/images/hero-img.png" 
+                alt="Tela Inicial da App"
+                initial={{ x: 500, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 2, ease: "easeOut", delay: 1.4 }}
+              />
             </div>
         </div>     
     </section>

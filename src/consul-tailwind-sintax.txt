@@ -1,5 +1,6 @@
 Most used
 px  Equivale a 4px de padding
+cursor-pointer 
 
 flex	Aplica display: flex
 grid	Aplica display: grid

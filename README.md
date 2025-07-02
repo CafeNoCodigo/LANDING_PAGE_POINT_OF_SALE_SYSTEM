@@ -1,88 +1,12 @@
-<h3 align="center">
-  Java PDV/POS LANDING PAGE
-</h3>
+# React + Vite
 
-<p align="center">🛒 POS (Point of Sale System)</p>
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-<p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM">
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM">
-  <a href="https://github.com/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM">
-  </a>
-  <a href="https://github.com/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM">
-  </a>
-  <img alt="GitHub" src="https://img.shields.io/github/license/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM">
-</p>
+Currently, two official plugins are available:
 
-<p align="center">
-  <a href="#-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-core-features">Core Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-structure">Structure</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-license">License</a>
-</p>
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
----
+## Expanding the ESLint configuration
 
-## 🧭 About the project
-
-**LANDING_PAGE_POINT_OF_SALE_SYSTEM** is the official landing page and support website for the Java-based Point of Sale system. The website serves as a digital front door for the POS application, providing:
-
-- An overview of the system and its features  
-- Visuals and screenshots of the software  
-- Download links and update instructions  
-- User guides and documentation  
-- Contact or support information  
-
-This site is ideal for promoting the POS system to potential users or clients.
-
-## 🚀 Technologies
-
-This landing page is being built using:
-
-- HTML5  
-- CSS3  
-- JavaScript  
-- Bootstrap (or a similar CSS framework)
-- ReactJS
-- GitHub Pages / Netlify / Vercel (for deployment)  
-
-> *Depending on project needs, more technologies may be added.*
-
-## ✅ Core Features
-
-- Fully responsive design for desktop and mobile  
-- Clear presentation of the POS system and use cases  
-- Screenshots, animations, and visual demos  
-- Contact form or call-to-action buttons  
-- Section for documentation or FAQs  
-- Optional multi-language layout  
-
-## 📦 Structure
-
-- 📁 assets → Images, icons, logos, and videos
-- 📁 css → Style sheets
-- 📁 js → JavaScript files
-- 📄 index.html → Homepage
-- 📄 about.html → About the POS system
-- 📄 contact.html → Support or contact page
-
-## 💻 Getting Started
-
-### Requirements
-
-To run the project locally:
-
-```bash
-git clone https://github.com/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM.git
-cd LANDING_PAGE_POINT_OF_SALE_SYSTEM
-``` 
-*Then open index.html in your browser, or use the Live Server extension in VS Code for a better development experience.*
-
-## 📝 License
-This project is licensed under the Apache 2.0 License. See the LICENSE file for details.
-
-Made with 💜 by Fabio, see my linkedin👉 [https://www.linkedin.com/in/fabiao-chirindza-mainato/]
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

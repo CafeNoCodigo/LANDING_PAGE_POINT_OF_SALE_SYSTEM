@@ -33,11 +33,11 @@ section {
     }
 
     .h1 {
-        @apply text-4xl text-amber-100 font-bold;
+        @apply text-4xl text-amber-100 font-bold text-shadow-lg;
     }
 
     .p {
-        @apply text-2xl text-amber-100;
+        @apply text-2xl text-amber-100 text-shadow-lg;
     }
 
     .btn {
@@ -61,6 +61,7 @@ section {
          md:left-1/2 md:rounded-3xl
          text-amber-100
          md:border
+         z-9999
          border-black;
          background-color: var(--navBar-color);
     }
@@ -99,6 +100,28 @@ section {
         @apply mb-5 md:text-6xl text-4xl;
     }
     /*Hero Section layer components Ends*/
+
+    /*Resource section starts*/
+    .resource-element {
+        @apply  rounded-full mb-10 text-shadow-lg;
+        background-color: var(--element-decoration);
+    }
+
+    /* Tailwind classes aplicadas via @apply ou diretamente */
+    .resources-p {
+        @apply border border-white p-5 rounded-2xl text-amber-100 mb-10 w-80 min-h-[200px] text-justify;
+    }
+
+    .resource-img {
+        @apply flex flex-col items-center w-80 min-h-[300px] text-center;
+    }
+
+    /*Resource section Ends*/
+
+    .about {
+        @apply rounded-2xl p-4 md:p-6 md:mr-25 md:ml-25 cursor-pointer md:hover:scale-110 md:transition-transform duration-400 ease-in-out md:border;
+        background-color: var(--element-decoration);
+    }
 }
 
 @layer utilities {

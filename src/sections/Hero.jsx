@@ -1,5 +1,11 @@
 import { motion } from "framer-motion";
 const Hero = () => {
+  const handleClick = () => {
+    const section = document.getElementById("about");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <section id="hero" className='section hero-section'>
@@ -23,6 +29,7 @@ const Hero = () => {
                 initial={{ x: -200, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 2, ease: "easeOut", delay: 1}}
+                onClick={handleClick}
                 className="btn mb-15 md:pt-5 pt-4 md:pb-5 pb-4 md:px-35 px-15 ml-10 md:ml-0 md:text-3xl text-xl">Saiba Mais</motion.button>
               </motion.div>
             <div className='hero-img group relative'>

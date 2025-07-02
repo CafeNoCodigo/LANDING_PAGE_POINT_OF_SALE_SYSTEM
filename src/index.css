@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+@import "tailwindcss";
+
+:root {
+    --gradient: linear-gradient(to right, #5de0e6, #004aad, #776c7f );
+    --bg-geral: #125770;
+    --bg-secundary: #3fa2b7;
+    --element-decoration: #3fa2b7;
+    --navBar-color: rgba(0, 0, 0, 0.459);
+}
+
+html,
+body {
+    width: 100vw;
+    background: var(--bg-geral);
+    font-family: "Fira Code", monospace;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100dvw;
+}
+
+@layer components {
+    .section {
+        @apply px-7 md:px-10 ;
+    }
+
+    .section-layout {
+        @apply md:flex md:flex-row flex-col items-center justify-center md:pt-30 pt-5;
+    }
+
+    .h1 {
+        @apply text-4xl text-white;
+    }
+
+    .p {
+        @apply text-xl text-white;
+    }
+    /*Hero Section Start*/
+    .hero-section {
+        @apply w-full min-h-screen;
+        background-image: linear-gradient(to right, #5de0e6, #004aad, #776c7f);
+    }
+
+    .hero-img {
+        @apply md:w-[100rem] w-[20rem] ml-10 md:ml-0 md:pl-10;
+    }
+    .hero-p {
+        @apply mb-16 text-2xl;
+    }
+
+    .hero-h1 {
+        @apply mb-5 md:text-7xl text-5xl;
+    }
+    /*Hero Section Ends*/
+}

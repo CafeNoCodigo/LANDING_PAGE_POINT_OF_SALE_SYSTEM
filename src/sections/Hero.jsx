@@ -5,7 +5,7 @@ const Hero = () => {
     <section id="hero" className='section hero-section'>
         <div className='section-layout md:gap-3 md:pt-25 pt-10'>
               <motion.div
-                className='section-txt'
+                className='section-txt mt-10'
               >
                 <motion.h1 
                 initial={{ x: -200, opacity: 0 }}
@@ -23,7 +23,7 @@ const Hero = () => {
                 initial={{ x: -200, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 2, ease: "easeOut", delay: 1}}
-                className="btn">Saiba Mais</motion.button>
+                className="btn mb-15 md:pt-5 pt-4 md:pb-5 pb-4 md:px-35 px-15 ml-10 md:ml-0 md:text-3xl text-xl">Saiba Mais</motion.button>
               </motion.div>
             <div className='hero-img group relative'>
               <motion.img

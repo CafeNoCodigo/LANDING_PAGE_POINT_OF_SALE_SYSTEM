@@ -46,20 +46,39 @@ section {
          md:hover:bg-amber-100 
          md:hover:text-black 
          bg-black 
-         md:transition-colors duration-700 ease-in-out 
-         md:px-35 px-15 
-         mb-15 
-         md:pt-5 pt-4 
-         md:pb-5 pb-4 
+         md:transition-colors duration-700 ease-in-out  
          md:rounded-full rounded-2xl 
-         md:ml-0 
-         ml-10 
+         md:ml-0
          text-amber-100 
-         md:text-3xl text-xl 
          md:tracking-widest tracking-wide;
     }
 
-    /*Hero Section Start*/
+    /*NavBar layer components Starts*/
+    .nav-bar {
+        @apply fixed flex md:flex-row items-center justify-center
+         md:gap-5 md:w-4/5 w-full md:transform md:-translate-x-1/2
+         h-1/12 md:mt-7 md:p-2 p-5
+         md:left-1/2 md:rounded-3xl
+         text-amber-100
+         md:border
+         border-black;
+         background-color: var(--navBar-color);
+    }
+
+    .nav-bar-a {
+        @apply md:text-xl cursor-pointer relative hidden;
+    }
+
+    .logo {
+        @apply md:text-xl text-xs md:hover:scale-110 md:transition-transform duration-500 ease-in-out;
+    }
+
+    .nav-bar-btn {
+        @apply px-5 pt-1 pb-1 ml-10 md:ml-5 text-xl;
+    }
+    /*NavBar layer components Ends*/
+
+    /*Hero Section layer components Starts*/
     .span-hero-h1 {
         @apply md:tracking-tighter;
     }
@@ -72,19 +91,6 @@ section {
         @apply md:w-[100rem] w-[20rem] ml-10 md:ml-0 md:pl-5 relative;
     }
 
-    .hero-img-hover {
-        @apply 
-         absolute
-         -inset-4
-        md:bg-amber-200
-         md:rounded-full
-         md:blur-2xl
-         md:opacity-60
-         md:transition-transform duration-900
-         md:group-hover:scale-110 
-         z-0
-    }
-
     .hero-p {
         @apply mb-10 text-2xl ;
     }
@@ -92,7 +98,7 @@ section {
     .hero-h1 {
         @apply mb-5 md:text-6xl text-4xl;
     }
-    /*Hero Section Ends*/
+    /*Hero Section layer components Ends*/
 }
 
 @layer utilities {
@@ -103,3 +109,20 @@ section {
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
   }
 }
+
+/*NavBar css Starts*/
+.underline-animated::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: currentColor; /* usa cor do texto */
+    transition: width 0.3s ease;
+}
+
+.underline-animated:hover::after {
+    width: 100%;
+}
+/*NavBar css Ends*/

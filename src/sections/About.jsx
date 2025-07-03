@@ -7,7 +7,7 @@ const About = () => {
             <div className='text-center'>
                 <h1 className='h1 md:text-5xl text-2xl pb-10 mt-10 md:mt-10 tracking-tighter text-shadow'>Sobre o Vende Agora</h1>
                 <div className="about">
-                    <p className="p md:text-center text-left text-shadow md:text-4xl text-2xl">
+                    <p className="p text-left text-shadow md:text-4xl text-2xl">
                         Nosso Sistema PDV (Ponto de Venda) foi desenvolvido
                         para simplificar e agilizar a gestão de vendas no seu
                         negócio. Ideal para lojas, mercados, farmácias e pequenos

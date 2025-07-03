@@ -1,41 +1,36 @@
-import React from 'react'
+import { useState } from "react";
+import resourcesData from "../index";
 
 const Resources = () => {
-  return (
-    <section id='resources'> 
-        <div className='section mt-10'>
-            <h1 className='h1 text-center md:text-5xl text-2xl'>Principais Recusrsos</h1>
-            <div className='flex items-center justify-center mt-20 gap-5'>
-                <div className='resource-img'>
-                    <img className="resource-element w-[8rem]" src="/images/logos/simple.png" alt="Simple" />
-                    <p className='resources-p'>Interface simples e intuitiva,
-                        desenvolvida para que qualquer
-                        pessoa possa operar o sistema com
-                        rapidez, sem necessidade de
-                        treinamento técnico.
-                    </p>
-                </div>
-                <div className='resource-img'>
-                    <img className="resource-element w-[8rem]" src="/images/logos/manager.png" alt="Manager"/>
-                    <p className='resources-p ml-10 mr-10'>Gerencie produtos com códigos
-                        de barras, quantidades, preços e
-                        imagens. Receba alertas de
-                        estoque baixo.
-                    </p>
-                </div>
-                <div className='resource-img'>
-                    <img className="resource-element w-[8rem]" src="/images/logos/develop.png" alt="" />
-                    <p className='resources-p'> Acompanhe o desempenho do seu
-                        negócio com relatórios completos
-                        de vendas, produtos mais vendidos,
-                        formas de pagamento.
-                    </p>
-                </div>
-            </div>
-        </div>
-            
-    </section> 
-  )
-}
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
-export default Resources
+  return (
+    <section id="resources">
+      <div className="section mt-10">
+        <h1 className="h1 text-center md:text-5xl text-2xl">Principais Recursos</h1>
+        <div className="md:flex items-center justify-center mt-20 gap-5">
+          {resourcesData.map((resource, index) => (
+            <div
+              key={index}
+              className={`
+                resource-img
+                transform transition-all duration-500 ease-in-out
+                ${hoveredIndex !== null && hoveredIndex !== index ? "md:opacity-40 md:scale-95" : "md:opacity-100 md:scale-100"}
+                md:hover:scale-105
+              `}
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+            >
+              <div className="resource-img-bg">
+                <img className="resource-element" src={resource.img} alt={resource.alt} />
+              </div>
+              <p className="resources-p">{resource.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Resources;

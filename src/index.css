@@ -62,7 +62,8 @@ section {
          text-amber-100
          md:border
          z-9999
-         border-black;
+         border-black    
+         backdrop-blur-md;
          background-color: var(--navBar-color);
     }
 
@@ -85,7 +86,7 @@ section {
     }
 
     .hero-section {
-        background-image: linear-gradient(to right, #2f7275, #003983, #494150);
+        /*background-image: linear-gradient(to right, #2f7275, #003983, #494150);*/
     }
 
     .hero-img {
@@ -103,17 +104,22 @@ section {
 
     /*Resource section starts*/
     .resource-element {
-        @apply  rounded-full mb-10 text-shadow-lg;
-        background-color: var(--element-decoration);
+        @apply  rounded-3xl mb-10 text-shadow-lg w-[10rem];
+        
     }
 
-    /* Tailwind classes aplicadas via @apply ou diretamente */
     .resources-p {
-        @apply border border-white p-5 rounded-2xl text-amber-100 mb-10 w-80 min-h-[200px] text-justify;
+        @apply border border-white p-5 rounded-2xl text-amber-100 mb-10 w-80 min-h-[200px] text-left;
     }
 
     .resource-img {
         @apply flex flex-col items-center w-80 min-h-[300px] text-center;
+            
+    }
+
+    .resource-img-bg {
+        @apply w-[10rem] h-[10rem] rounded-4xl p-2 mb-10;
+        background-color: var(--element-decoration);
     }
 
     /*Resource section Ends*/

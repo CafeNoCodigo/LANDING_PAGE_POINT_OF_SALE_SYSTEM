@@ -24,7 +24,9 @@ const Resources = () => {
               <div className="resource-img-bg">
                 <img className="resource-element" src={resource.img} alt={resource.alt} />
               </div>
+              <h1 className="h1">{resource.title}</h1>
               <p className="resources-p">{resource.text}</p>
+              
             </div>
           ))}
         </div>

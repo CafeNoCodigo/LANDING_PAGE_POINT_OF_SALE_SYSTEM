@@ -6,15 +6,15 @@ const resourcesData = [
     text: "Interface simples e intuitiva, desenvolvida para que qualquer pessoa possa operar o sistema com rapidez, sem necessidade de treinamento técnico.",
   },
   {
-    title: "Simplicidade",
+    title: "Controle",
     img: "/images/logos/manager.png",
     alt: "Manager",
     text: "Gerencie produtos com códigos de barras, quantidades, preços e imagens. Receba alertas de estoque baixo.",
   },
   {
-    title: "Simplicidade",
+    title: "Desempenho",
     img: "/images/logos/develop.png",
-    alt: "Desempenho",
+    alt: "Development",
     text: "Acompanhe o desempenho do seu negócio com relatórios completos de vendas, produtos mais vendidos, formas de pagamento.",
   },
 ];

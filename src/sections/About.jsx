@@ -16,7 +16,7 @@ const About = () => {
                         técnica.
                     </p>
                 </div>
-                <button className='btn p-5 pl-10 pr-10 mt-10'>Baixar Demo</button>
+                <button className='btn p-5 pl-10 pr-10 mt-10 glow-hover'>Baixar Demo</button>
             </div>
         </div>
     </section>

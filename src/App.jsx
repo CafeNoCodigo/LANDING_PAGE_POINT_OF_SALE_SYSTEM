@@ -2,6 +2,7 @@ import Hero from './sections/Hero'
 import NavBar from './sections/NavBar'
 import About from './sections/About'
 import Resources from './sections/Resources'
+import Resources_Payment from './sections/Resources_Payment'
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
     <Hero />
     <About />
     <Resources />
+    <Resources_Payment />
     </>
   )
     

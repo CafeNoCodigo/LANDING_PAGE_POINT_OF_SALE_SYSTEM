@@ -6,7 +6,7 @@ const Resources = () => {
 
   return (
     <section id="resources">
-      <div className="section mt-10">
+      <div className="section mt-15">
         <h1 className="h1 text-center md:text-5xl text-2xl">Principais Recursos</h1>
         <div className="md:flex items-center justify-center mt-20 gap-5">
           {resourcesData.map((resource, index) => (
@@ -14,6 +14,7 @@ const Resources = () => {
               key={index}
               className={`
                 resource-img
+                cursor-pointer
                 transform transition-all duration-500 ease-in-out
                 ${hoveredIndex !== null && hoveredIndex !== index ? "md:opacity-40 md:scale-95" : "md:opacity-100 md:scale-100"}
                 md:hover:scale-105
@@ -24,7 +25,7 @@ const Resources = () => {
               <div className="resource-img-bg">
                 <img className="resource-element" src={resource.img} alt={resource.alt} />
               </div>
-              <h1 className="h1">{resource.title}</h1>
+              <h1 className="h1 md:text-3xl text-2xl mb-5">{resource.title}</h1>
               <p className="resources-p">{resource.text}</p>
               
             </div>

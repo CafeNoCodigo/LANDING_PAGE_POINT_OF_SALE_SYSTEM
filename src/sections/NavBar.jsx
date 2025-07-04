@@ -2,7 +2,7 @@ import React from 'react'
 
 const NavBar = () => {
   return (
-    <div className='nav-bar bg-[rgba(0, 0, 0, 0.459)]'>
+    <div className='nav-bar bg-[rgba(0, 0, 0, 0.5)]'>
         <div className='logo'>
             <a href="#hero">Vende Agora</a>
         </div>
@@ -14,7 +14,7 @@ const NavBar = () => {
             </div>
         </div>
         <div>
-            <a href="#contact" className='btn nav-bar-btn'>Contacto</a>
+            <a href="#contact" className='btn nav-bar-btn glow-hover'>Contacto</a>
         </div>
     </div>
   )

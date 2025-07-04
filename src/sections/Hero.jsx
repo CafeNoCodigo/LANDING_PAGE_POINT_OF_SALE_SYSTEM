@@ -14,23 +14,24 @@ const Hero = () => {
                 className='section-txt mt-10'
               >
                 <motion.h1 
-                initial={{ x: -200, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 2, ease: "easeOut", delay: 0.2}}
-                className='h1 hero-h1 text-shadow-lg'> <span className='span-hero-h1'>Controle Seu</span> negócio como nunca antes fez
+                  initial={{ x: -200, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 2, ease: "easeOut", delay: 0.2}}
+                  className='h1 hero-h1 text-shadow-lg'> 
+                  <span className='span-hero-h1'>Controle Seu</span> negócio como nunca antes fez
                 </motion.h1>
                 <motion.p 
-                className='p hero-p text-shadow'
-                initial={{ x: -200, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 2, ease: "easeOut", delay: 0.6}}
+                  className='p hero-p text-shadow'
+                  initial={{ x: -200, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 2, ease: "easeOut", delay: 0.6}}
                 >Pare de anotar suas vendas em cadernos, blocos de notas ou estensas planilhas que complicam o seu negócio</motion.p>
                 <motion.button 
-                initial={{ x: -200, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 2, ease: "easeOut", delay: 1}}
-                onClick={handleClick}
-                className="btn mb-15 md:pt-5 pt-4 md:pb-5 pb-4 md:px-35 px-15 ml-10 md:ml-0 md:text-3xl text-xl">Saiba Mais</motion.button>
+                  initial={{ x: -200, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 2, ease: "easeOut", delay: 1}}
+                  onClick={handleClick}
+                  className="btn mb-15 md:pt-5 pt-4 md:pb-5 pb-4 md:px-35 px-15 ml-10 md:ml-0 md:text-3xl text-xl glow-hover">Saiba Mais</motion.button>
               </motion.div>
             <div className='hero-img group relative'>
               <motion.img

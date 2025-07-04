@@ -82,4 +82,6 @@ cd LANDING_PAGE_POINT_OF_SALE_SYSTEM
 ## 📝 License
 This project is licensed under the Apache 2.0 License. See the LICENSE file for details.
 
-Made with 💜 by Fabio, see my linkedin👉 [https://www.linkedin.com/in/fabiao-chirindza-mainato/]
+Made with 💜 by Fabio, see my linkedin 👉 <a href="https://www.linkedin.com/in/fabiao-chirindza-mainato/" target="_blank">
+    <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank">
+  </a>

@@ -28,4 +28,26 @@ export const about = [
   },
 ];
 
+export const contact = [
+  {
+    tel: "+258 834-681-798",
+    email: "fpscomerce@gmail.com"
+  }
+];
+
+export const report = [
+  {
+    text: "Desde que começámosa usar este sistema, asnossas vendas ficarammuito mais organizadas.O controlo de estoque eos relatórios em PDF sãouma mais-valia para onosso negócio.",
+    author: "Júlio Macano, Dono de Mercearia em Matola"
+  },
+  {
+    text: "O sistema é rápido, fácil de usar e muito completo. Já testei outros programas de fora, mas este é o que mais se adapta à nossa realidade no mercado.",
+    author: "Armando Nhantumbo, comerciante em Maputo"
+  },
+  {
+    text: "A parte do fecho de caixa automático e os gráficos mensais ajudaram-me a perceber melhor o desempenho do meu negócio. Recomendo vivamente!",
+    author: "Esmeralda Mucavele, Vendedora de roupas da Shein em Maputo"
+  },
+];
+
 export default resourcesData;

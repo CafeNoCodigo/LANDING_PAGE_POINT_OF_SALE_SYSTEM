@@ -90,7 +90,7 @@ section {
     }
 
     .hero-img {
-        @apply md:w-[100rem] w-[20rem] ml-10 md:ml-0 md:pl-5 relative;
+        @apply md:w-[70rem] w-[20rem] ml-2 md:ml-0 md:pl-5 md:pr-20 relative;
     }
 
     .hero-p {
@@ -139,7 +139,7 @@ section {
     }
 
     .resources-payment-span {
-        @apply text-4xl pb-2;
+        @apply text-4xl pb-2 font-bold ;
     }
 }
 

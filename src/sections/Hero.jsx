@@ -37,7 +37,7 @@ const Hero = () => {
               <motion.img
                 src="/images/bg.png"
                 alt="Efeito de fundo"
-                className="absolute inset-0 w-full h-full object-cover z-0 opacity-40 scale-115 pl-20 pb-10 blur-md"
+                className="absolute inset-0 w-full h-full object-cover z-0 opacity-40 scale-115 pl-30 pb-10 blur-md"
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1.2, opacity: 0.6 }}
                 transition={{ duration: 2, ease: "easeOut", delay: 2.3 }}

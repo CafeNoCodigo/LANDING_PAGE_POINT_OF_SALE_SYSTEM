@@ -25,7 +25,7 @@ section {
 
 @layer components {
     .section {
-        @apply px-7 md:px-10 ;
+        @apply mx-auto px-7 md:px-10 ;
     }
 
     .section-layout {
@@ -47,7 +47,7 @@ section {
          md:hover:text-black 
          bg-black 
          md:transition-colors duration-700 ease-in-out  
-         md:rounded-full rounded-2xl 
+         md:rounded-4xl rounded-xl 
          md:ml-0
          text-amber-100 
          md:tracking-widest tracking-wide;
@@ -72,7 +72,7 @@ section {
     }
 
     .logo {
-        @apply md:text-xl text-xs md:hover:scale-110 md:transition-transform duration-500 ease-in-out;
+        @apply md:text-xl text-xs md:hover:scale-110 md:transition-transform duration-200 ease-in;
     }
 
     .nav-bar-btn {
@@ -104,12 +104,12 @@ section {
 
     /*Resource section starts*/
     .resource-element {
-        @apply  rounded-3xl mb-10 text-shadow-lg w-[10rem];
+        @apply mb-10 text-shadow-lg w-[10rem];
         
     }
 
     .resources-p {
-        @apply border border-white p-5 rounded-2xl text-amber-100 mb-10 w-80 min-h-[200px] text-left;
+        @apply border border-white p-5 md:rounded-4xl rounded-xl text-amber-100 mb-10 w-80 min-h-[200px] text-left;
     }
 
     .resource-img {
@@ -118,15 +118,24 @@ section {
     }
 
     .resource-img-bg {
-        @apply w-[10rem] h-[10rem] rounded-4xl p-2 mb-10;
+        @apply w-[10rem] h-[10rem] md:rounded-4xl rounded-xl p-2 mb-10;
         background-color: var(--element-decoration);
     }
 
     /*Resource section Ends*/
 
-    .about {
+    /*.about {
         @apply rounded-2xl p-4 md:p-6 md:mr-25 md:ml-25 cursor-pointer md:hover:scale-110 md:transition-transform duration-400 ease-in-out md:border;
         background-color: var(--element-decoration);
+    }*/
+
+    .about-p {
+        @apply 
+        mb-15
+        px-5
+        pt-5 pb-5 
+        text-left md:text-2xl text-xl
+        md:w-100 min-h-[300px];
     }
 
     .resources-payment-span {
@@ -142,23 +151,6 @@ section {
   .text-shadow-lg {
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
   }
-
-  @keyframes glow {
-    0% {
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-    }
-    50% {
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-    }
-    100% {
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-    }
-  }
-
-  .glow-hover:hover {
-    animation: glow 1.2s ease-in-out infinite;
-    border-radius: calc(infinity * 1px);
-   }
 }
 
 /*NavBar css Starts*/
@@ -177,3 +169,24 @@ section {
     width: 100%;
 }
 /*NavBar css Ends*/
+@keyframes glow {
+        0% {
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+        50% {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        }
+        100% {
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+}
+.glow-hover:hover {
+        animation: glow 1.2s ease-in-out infinite;
+        border-radius: 2rem;
+}    
+@media (max-width: 768px) {
+    .glow-hover:hover {
+        animation: none;
+        border-radius: 2rem;
+    }  
+}

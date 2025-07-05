@@ -1,5 +1,5 @@
 import { useState } from "react";
-import resourcesData from "../index";
+import { resourcesData } from "../index";
 
 const Resources = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -8,7 +8,7 @@ const Resources = () => {
     <section id="resources">
       <div className="section mt-15">
         <h1 className="h1 text-center md:text-5xl text-2xl">Principais Recursos</h1>
-        <div className="md:flex items-center justify-center mt-20 gap-5">
+        <div className="md:flex items-center justify-center mt-20 md:gap-5">
           {resourcesData.map((resource, index) => (
             <div
               key={index}

@@ -4,7 +4,7 @@ import About from './sections/About'
 import Resources from './sections/Resources'
 import Resources_Payment from './sections/Resources_Payment'
 import Report from './sections/Report'
-import Contact from './sections/contact'
+import Contact from './sections/Contact'
 import Footer from './sections/Footer'
 
 const App = () => {

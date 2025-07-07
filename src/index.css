@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -13,7 +13,7 @@ html,
 body {
     width: 100vw;
     background: var(--bg-geral);
-    font-family: "Fira Code", monospace;
+    font-family: "Roboto Flex", sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -25,7 +25,7 @@ section {
 
 @layer components {
     .section {
-        @apply mx-auto px-7 md:px-10 ;
+        @apply mx-auto px-10 md:px-10 ;
     }
 
     .section-layout {
@@ -33,7 +33,7 @@ section {
     }
 
     .h1 {
-        @apply text-4xl text-amber-100 font-bold text-shadow-lg;
+        @apply md:text-5xl text-2xl text-amber-100 font-bold text-shadow-lg;
     }
 
     .p {
@@ -56,15 +56,15 @@ section {
     /*NavBar layer components Starts*/
     .nav-bar {
         @apply fixed flex md:flex-row items-center justify-center
-         md:gap-5 md:w-4/5 w-full md:transform md:-translate-x-1/2
-         h-1/12 md:mt-7 md:p-2 p-5
-         md:left-1/2 md:rounded-3xl
-         text-amber-100
-         md:border
-         z-9999
-         border-black    
-         backdrop-blur-md;
-         background-color: var(--navBar-color);
+        md:gap-5 md:w-4/5 w-full md:transform md:-translate-x-1/2
+        md:h-15 h-20  md:mt-7 md:p-2 p-5
+        md:left-1/2 md:rounded-3xl
+      text-amber-100
+        md:border
+        z-9999
+      border-black    
+        backdrop-blur-sm;
+        background-color: var(--navBar-color);
     }
 
     .nav-bar-a {
@@ -72,7 +72,7 @@ section {
     }
 
     .logo {
-        @apply md:text-xl text-xs md:hover:scale-110 md:transition-transform duration-200 ease-in;
+        @apply text-xl md:hover:scale-110 md:transition-transform duration-200 ease-in;
     }
 
     .nav-bar-btn {
@@ -85,12 +85,8 @@ section {
         @apply md:tracking-tighter;
     }
 
-    .hero-section {
-        /*background-image: linear-gradient(to right, #2f7275, #003983, #494150);*/
-    }
-
     .hero-img {
-        @apply md:w-[70rem] w-[20rem] ml-2 md:ml-0 md:pl-5 md:pr-20 relative;
+        @apply md:w-[70rem] w-[20rem] ml-2 md:ml-0 md:pl-5 md:pr-20 relative px-5;
     }
 
     .hero-p {
@@ -105,15 +101,14 @@ section {
     /*Resource section starts*/
     .resource-element {
         @apply mb-10 text-shadow-lg w-[10rem];
-        
     }
 
     .resources-p {
-        @apply border border-white p-5 md:rounded-4xl rounded-xl text-amber-100 mb-10 w-80 min-h-[200px] text-left;
+        @apply border border-white p-5 md:rounded-4xl rounded-xl text-amber-100 mb-10 w-80 min-h-[170px] text-left;
     }
 
     .resource-img {
-        @apply flex flex-col items-center w-80 min-h-[300px] text-center;
+        @apply flex flex-col items-center justify-center w-80 min-h-[300px] text-center;
             
     }
 
@@ -122,25 +117,42 @@ section {
         background-color: var(--element-decoration);
     }
 
+    .resources-payment-span {
+        @apply text-5xl pb-2 font-bold;
+    }
+
+    .resources-payments-h1 {
+        @apply tracking-widest font-light md:text-amber-100 text-black mt-2 md:mt-0 p-5 md:p-0 rounded-xl;
+    }
     /*Resource section Ends*/
 
-    /*.about {
-        @apply rounded-2xl p-4 md:p-6 md:mr-25 md:ml-25 cursor-pointer md:hover:scale-110 md:transition-transform duration-400 ease-in-out md:border;
-        background-color: var(--element-decoration);
-    }*/
-
+    /*About section starts*/
     .about-p {
         @apply 
-        mb-15
+        mb-10
         px-5
         pt-5 pb-5 
         text-left md:text-2xl text-xl
-        md:w-100 min-h-[300px];
+        md:w-100 min-h-[250px];
+    }
+    /*About section Ends*/
+
+    .element-decoration {
+        @apply absolute w-60 z-0;
     }
 
-    .resources-payment-span {
-        @apply text-4xl pb-2 font-bold ;
+    /*Report section Stars*/
+    .report-info {
+        @apply md:mt-15 mt-7 p-5 md:rounded-4xl rounded-xl text-shadow-lg bg-[var(--element-decoration)] md:ml-5 md:mr-5 md:min-h-[370px] md:min-w-[350px];
     }
+    /*Report section Ends*/
+
+    /*Contact Section Starts*/
+    .contact-info {
+        @apply flex mb-3;
+    }
+    /*Contact Section Ends*/
+    
 }
 
 @layer utilities {
@@ -161,7 +173,7 @@ section {
     bottom: 0;
     height: 2px;
     width: 0;
-    background-color: currentColor; /* usa cor do texto */
+    background-color: currentColor;
     transition: width 0.3s ease;
 }
 
@@ -169,24 +181,31 @@ section {
     width: 100%;
 }
 /*NavBar css Ends*/
+
+/*Keyframes animations Starts*/
 @keyframes glow {
-        0% {
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-        }
-        50% {
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-        }
-        100% {
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-        }
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
 }
+
 .glow-hover:hover {
-        animation: glow 1.2s ease-in-out infinite;
-        border-radius: 2rem;
-}    
+    animation: glow 1.2s ease-in-out infinite;
+    border-radius: 2rem;
+}
+/*Keyframes animations Ends*/ 
+
+/*@Media Starts*/   
 @media (max-width: 768px) {
     .glow-hover:hover {
         animation: none;
         border-radius: 2rem;
     }  
 }
+/*@Media Ends*/

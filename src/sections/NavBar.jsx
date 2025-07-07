@@ -10,7 +10,7 @@ const NavBar = () => {
             <div className='flex gap-4'>
                 <a className="nav-bar-a underline-animated lg:block" href="#hero">Inicio</a>
                 <a className="md:mr-5 md:ml-5 nav-bar-a underline-animated sm:block md:block" href="#resources">Recursos</a>
-                <a className="nav-bar-a underline-animated lg:block" href="#testimonials">Depoimentos</a>
+                <a className="nav-bar-a underline-animated lg:block" href="#report">Depoimentos</a>
             </div>
         </div>
         <div>

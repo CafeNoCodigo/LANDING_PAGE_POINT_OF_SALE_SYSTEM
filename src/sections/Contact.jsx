@@ -35,9 +35,9 @@ const Contact = () => {
             </div>
             <div className='contact-info'>
               <h1 className='h1 text-xl pr-10'>Social</h1>
-              <a href="" target='_blank'><img src={ contact.linkedin_img } alt="Linkedin" /></a>
-              <a href="" target='_blank'><img className="pr-5 pl-5" src={ contact.whatsapp_img } alt="Whatsapp" /></a>
-              <a href="" target='_blank'><img src={ contact.x_img } alt="X" /></a>
+              <a href={ contact.linkedin } target='_blank'><img src={ contact.linkedin_img } alt="Linkedin" /></a>
+              <a href={ contact.whatsapp } target='_blank'><img className="pr-5 pl-5" src={ contact.whatsapp_img } alt="Whatsapp" /></a>
+              <a href={ contact.x } target='_blank'><img src={ contact.x_img } alt="X" /></a>
             </div>
           </div>
         </div>

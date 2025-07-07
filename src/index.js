@@ -34,8 +34,10 @@ export const contact = {
   linkedin_img: "/images/linkedin.svg",
   whatsapp_img: "/images/whatsapp.svg",
   x_img: "/images/x.svg",
-  img: "/images/contact-img.png"
-  
+  img: "/images/contact-img.png",
+  whatsapp: "https://wa.me/258847455300?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20sistema%20pdv.",
+  linkedin: "https://www.linkedin.com/in/fabiao-chirindza-mainato/",
+  x: "https://x.com/MainatoFabiao"
 };
 
 export const report = [

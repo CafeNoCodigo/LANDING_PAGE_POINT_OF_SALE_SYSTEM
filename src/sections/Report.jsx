@@ -17,14 +17,13 @@ const Report = () => {
         className='element-decoration rotate-105 md:ml-250 ml-[-100px] mt-100 md:mt-150
           md:hover:rotate-305 transition-all duration-750 ease-in-out hidden md:block' 
         alt="Element decoration blue" />
-        <div>
-
         <img 
         src="/images/bg-element-blue.png"
         className='element-decoration rotate-105 ml-[-100px] mt-100 md:mt-0
           md:hover:rotate-305 transition-all duration-750 ease-in-out hidden md:block' 
         alt="Element decoration blue" />
-        <div></div>
+        
+        <div>
             <h1 className='h1 mb-10 text-center text-shadow-lg'>{ title.report }</h1>
             <div className='md:flex'>
                 { report.map((resource, index) =>

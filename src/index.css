@@ -141,9 +141,17 @@ section {
         @apply absolute w-60 z-0;
     }
 
+    /*Report section Stars*/
     .report-info {
         @apply md:mt-15 mt-7 p-5 md:rounded-4xl rounded-xl text-shadow-lg bg-[var(--element-decoration)] md:ml-5 md:mr-5 md:min-h-[370px] md:min-w-[350px];
     }
+    /*Report section Ends*/
+
+    /*Contact Section Starts*/
+    .contact-info {
+        @apply flex mb-3;
+    }
+    /*Contact Section Ends*/
     
 }
 

@@ -28,12 +28,15 @@ export const about = [
   },
 ];
 
-export const contact = [
-  {
-    tel: "+258 834-681-798",
-    email: "fpscomerce@gmail.com"
-  }
-];
+export const contact = {
+  tel: "+258 834-681-798",
+  email: "fpscomerce@gmail.com",
+  linkedin_img: "/images/linkedin.svg",
+  whatsapp_img: "/images/whatsapp.svg",
+  x_img: "/images/x.svg",
+  img: "/images/contact-img.png"
+  
+};
 
 export const report = [
   {

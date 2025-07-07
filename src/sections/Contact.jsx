@@ -26,15 +26,15 @@ const Contact = () => {
           <h1 className='h1 md:mb-20 mb-10'>{ title.contact }</h1>
           <div className='mb-10'>
             <div className='contact-info'>
-              <h1 className='h1 text-xl pr-5'>Telefone</h1>
+              <h1 className='h1 text-xl pr-5 font-light'>Telefone</h1>
               <p className='text-lg'>{ contact.tel }</p>
             </div>
             <div className='contact-info'>
-              <h1 className='h1 text-xl pr-10'>E-mail</h1>
+              <h1 className='h1 text-xl pr-10 font-light'>E-mail</h1>
               <p className='text-lg'>{ contact.email }</p>
             </div>
             <div className='contact-info'>
-              <h1 className='h1 text-xl pr-10'>Social</h1>
+              <h1 className='h1 text-xl pr-10 font-light'>Social</h1>
               <a href={ contact.linkedin } target='_blank'><img src={ contact.linkedin_img } alt="Linkedin" /></a>
               <a href={ contact.whatsapp } target='_blank'><img className="pr-5 pl-5" src={ contact.whatsapp_img } alt="Whatsapp" /></a>
               <a href={ contact.x } target='_blank'><img src={ contact.x_img } alt="X" /></a>

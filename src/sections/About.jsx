@@ -30,7 +30,7 @@ const About = () => {
                                     key={index}
                                     onMouseEnter = {() => setHoveredIndex(index)}
                                     onMouseLeave={() => setHoveredIndex(null)}>
-                                <p className="p text-shadow about-p">
+                                <p className="p text-shadow about-p font-light">
                                     {resource.text} 
                                 </p>
                             </div>

@@ -6,11 +6,6 @@ const Report = () => {
 
   return (
     <section id="report" className='section-layout section mt-20 md:mt-0'>
-        <img 
-        src="/images/bg-element-yellow.png"
-        className='element-decoration rotate-55 md:ml-0 ml-[-100px] mt-100 md:mt-120
-          md:hover:rotate-255 transition-all duration-750 ease-in-out' 
-        alt="Element decoration yellow" />
 
         <img 
         src="/images/bg-element-blue.png"

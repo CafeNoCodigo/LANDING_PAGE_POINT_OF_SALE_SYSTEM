@@ -50,4 +50,11 @@ export const report = [
   },
 ];
 
+export const title = {
+    about: "Sobre o Vende Agora",
+    resources: "Principais Recursos",
+    report: "Acompanhe Alguns Relatos",
+    contact: "Fale Conosco"
+};
+
 export default resourcesData;

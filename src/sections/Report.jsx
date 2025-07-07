@@ -32,7 +32,7 @@ const Report = () => {
                         ${ hoveredIndex !== null && hoveredIndex !== index ? "md:scale-95 md:opacity-40" : "opacity-100 scale-100"}`}
                     onMouseEnter={ () => setHoveredIndex( index )}
                     onMouseLeave={ () => setHoveredIndex( null )}>
-                        <p className='p mb-5'>{ resource.text }</p>
+                        <p className='p mb-5 font-light'>{ resource.text }</p>
                         <span className='text-black font-bold md:text-2xl text-xl'>{ resource.author }</span>
                     </div>
                 )}

@@ -37,7 +37,7 @@ const Hero = () => {
                   <span className='span-hero-h1'>Controle Seu</span> negócio como nunca antes fez
                 </motion.h1>
                 <motion.p 
-                  className='p hero-p text-shadow'
+                  className='p hero-p text-shadow font-light'
                   initial={{ x: -200, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ duration: 2, ease: "easeOut", delay: 0.6}}>

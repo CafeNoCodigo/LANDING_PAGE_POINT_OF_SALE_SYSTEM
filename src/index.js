@@ -37,16 +37,16 @@ export const contact = [
 
 export const report = [
   {
-    text: "Desde que começámosa usar este sistema, asnossas vendas ficarammuito mais organizadas.O controlo de estoque eos relatórios em PDF sãouma mais-valia para onosso negócio.",
-    author: "Júlio Macano, Dono de Mercearia em Matola"
+    text: "'Desde que começámos a usar este sistema, as nossas vendas ficaram muito mais organizadas. O controlo de estoque e os relatórios em PDF são uma mais-valia para o nosso negócio.'",
+    author: "- Júlio Macano, Dono de Mercearia em Matola"
   },
   {
-    text: "O sistema é rápido, fácil de usar e muito completo. Já testei outros programas de fora, mas este é o que mais se adapta à nossa realidade no mercado.",
-    author: "Armando Nhantumbo, comerciante em Maputo"
+    text: "'O sistema é rápido, fácil de usar e muito completo. Já testei outros programas de fora, mas este é o que mais se adapta à nossa realidade no mercado.'",
+    author: "- Armando Nhantumbo, comerciante em Maputo"
   },
   {
-    text: "A parte do fecho de caixa automático e os gráficos mensais ajudaram-me a perceber melhor o desempenho do meu negócio. Recomendo vivamente!",
-    author: "Esmeralda Mucavele, Vendedora de roupas da Shein em Maputo"
+    text: "'A parte do fecho de caixa automático e os gráficos mensais ajudaram-me a perceber melhor o desempenho do meu negócio. Recomendo vivamente!'",
+    author: "- Esmeralda Mucavele, Vendedora de roupas da Shein em Maputo"
   },
 ];
 

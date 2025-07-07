@@ -25,7 +25,7 @@ section {
 
 @layer components {
     .section {
-        @apply mx-auto px-7 md:px-10 ;
+        @apply mx-auto px-10 md:px-10 ;
     }
 
     .section-layout {
@@ -118,11 +118,11 @@ section {
     }
 
     .resources-payment-span {
-        @apply text-4xl pb-2 font-bold ;
+        @apply text-5xl pb-2 font-bold;
     }
 
     .resources-payments-h1 {
-        @apply tracking-widest font-light md:text-amber-100 text-black md:bg-[var(--geral)] bg-[var(--element-decoration)] mt-2 md:mt-0 p-5 md:p-0 rounded-xl;
+        @apply tracking-widest font-light md:text-amber-100 text-black mt-2 md:mt-0 p-5 md:p-0 rounded-xl;
     }
     /*Resource section Ends*/
 
@@ -141,6 +141,9 @@ section {
         @apply absolute w-60 z-0;
     }
 
+    .report-info {
+        @apply md:mt-15 mt-7 p-5 md:rounded-4xl rounded-xl text-shadow-lg bg-[var(--element-decoration)] md:ml-5 md:mr-5 md:min-h-[370px] md:min-w-[350px];
+    }
     
 }
 

@@ -55,9 +55,9 @@ const Resources_Payment = () => {
                 transition-all duration-2000 ease-in-out"
             style={ window.innerWidth >= 768 ? {marginLeft: marginLeft} :  {opacity: opacity} }>
             <div className="pb-10 relative">
-              <h1 className="h1 resources-payments-h1 pt-2">M-Pesa</h1>
-              <h1 className="h1 resources-payments-h1 pt-5 pb-5">E-Mola</h1>
-              <h1 className="h1 resources-payments-h1">Visa</h1>
+              <h1 className="h1 resources-payments-h1 pt-2 bg-red-400 md:bg-[var(--bg-geral)]">M-Pesa</h1>
+              <h1 className="h1 resources-payments-h1 pt-5 pb-5 bg-orange-400 md:bg-[var(--bg-geral)]">E-Mola</h1>
+              <h1 className="h1 resources-payments-h1 bg-blue-700 text-center md:text-right md:bg-[var(--bg-geral)]">Visa</h1>
             </div>
           </div>
           <img
@@ -70,7 +70,7 @@ const Resources_Payment = () => {
           <div
             className="text-right
                 md:text-right text-shadow 
-                mt-6 md:mt-[-30px] ml-2 mr-2
+                mt-6 md:mt-[-150px] ml-2 md:ml-[-70px] mr-2
                 hidden md:block"
           >
             <span className="block resources-payment-span">Metodos de</span>

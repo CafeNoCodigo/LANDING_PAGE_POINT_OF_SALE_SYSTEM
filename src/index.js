@@ -29,7 +29,7 @@ export const about = [
 ];
 
 export const contact = {
-  tel: "+258 834-681-798",
+  tel: "+258 847-455-300",
   email: "fpscomerce@gmail.com",
   linkedin_img: "/images/linkedin.svg",
   whatsapp_img: "/images/whatsapp.svg",

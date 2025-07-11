@@ -10,7 +10,7 @@ const NavBar = () => {
                 <a className="nav-bar-a underline-animated lg:block" href="#hero"><span className="text-[var(--element-decoration)]">◉</span> Inicio</a>
                 <a className="md:mr-5 md:ml-5 nav-bar-a underline-animated sm:block md:block" href="#resources"><span className="text-[var(--element-decoration)]">◉</span> Recursos</a>
                 <a className="nav-bar-a underline-animated lg:block" href="#report"><span className="text-[var(--element-decoration)]">◉</span> Depoimentos</a>
-                <a className="nav-bar-a underline-animated lg:block" href="#report"><span className="text-[var(--element-decoration)]">◉</span> Planos</a>
+                <a className="nav-bar-a underline-animated lg:block" href="#plans"><span className="text-[var(--element-decoration)]">◉</span> Planos</a>
             </div>
         </div>
         <div className="flex gap-4 items-center justify-center ">

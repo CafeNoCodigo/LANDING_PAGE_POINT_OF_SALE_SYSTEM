@@ -5,7 +5,7 @@ const Contact = () => {
     <section id='contact' className='section bg-amber-100'>
       <img 
         src="/images/bg-element-yellow.png"
-        className='element-decoration rotate-55 md:ml-0 ml-[-100px] mt-100 md:mt-140
+        className='absolute element-decoration rotate-55 md:ml-0 ml-[-100px] mt-100 md:mt-140
           md:hover:rotate-255 transition-all duration-750 ease-in-out' 
         alt="Element decoration yellow" />
 
@@ -21,7 +21,7 @@ const Contact = () => {
           md:hover:rotate-305 transition-all duration-750 ease-in-out hidden md:block' 
         alt="Element decoration blue" />
 
-      <div className='section-layout mt-15'>
+      <div className='section-layout mt-15 flex flex-col md:flex-row items-center justify-center gap-10'>
         <div className='md:w-1/2 text-shadow-lg md:ml-10'>
           <h1 className='h1 md:mb-20 mb-10 text-black'>{ data.title.contact }</h1>
           <div className='mb-10'>

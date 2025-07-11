@@ -17,6 +17,7 @@ const App = () => {
     <Resources_Payment />
     <Report />
     <Contact />
+    <Footer /> 
     </>
   )
     

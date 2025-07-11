@@ -1,11 +1,11 @@
 import { useState } from "react"
-import { about, title } from '../index'
+import data from '../index'
 
-const About = () => {
+const  About = () => {
     const [hoveredIndex, setHoveredIndex] = useState( null );
 
   return (
-    <section id="about">
+    <section id="about px-5 py-5">
 
         <img 
         src="/images/bg-element-blue.png"
@@ -14,22 +14,22 @@ const About = () => {
         alt="Element decoration blue" />
         <div className='section section-layout'>
             <div className='text-center'>
-                <h1 className='h1 md:pb-20 pb-10 mt-10 md:mt-0 tracking-tighter text-shadow'>{ title.about }</h1>
-                    <div className="md:flex text-center items-center justify-center mx-5 
-                                gap-10">
-                        {about.map((resource, index) => (
+                <h1 className='h1 md:pb-20 pb-10 mt-10 md:mt-0 tracking-tighter text-shadow'>{ data.title.about }</h1>
+                    <div className="md:flex text-center items-center justify-center gap-5">
+                        {data.about.map((resource, index) => (
                             <div 
                                     className={`
                                     md:transform transition-all duration-500 ease-in-out
                                     cursor-pointer
-                                    mb-15
-                                    md:px-5 
+                                    mb-15 
                                     pt-5 pb-5
                                     md:rounded-4xl rounded-xl
                                     ${hoveredIndex !== null && hoveredIndex !== index ? "md:scale-95 md:opacity-40 md:bg-transparent bg-[var(--element-decoration)]" : "md:scale-100 md:opacity-100 bg-[var(--element-decoration)]"}`}
                                     key={index}
                                     onMouseEnter = {() => setHoveredIndex(index)}
                                     onMouseLeave={() => setHoveredIndex(null)}>
+                                <h2 className="h2 text-shadow about-h2 font-bold">
+                                    {resource.title}</h2>
                                 <p className="p text-shadow about-p font-light">
                                     {resource.text} 
                                 </p>

@@ -1,4 +1,4 @@
-export const resourcesData = [
+const resourcesData = [
   {
     title: "Simplicidade",
     img: "/images/logos/simple.png",
@@ -19,16 +19,23 @@ export const resourcesData = [
   },
 ];
 
-export const about = [
+const about = [
   {
-    text: "Nosso Sistema PDV (Ponto de Venda) foi desenvolvidopara simplificar e agilizar a gestão de vendas no seu negócio."
+    title: "O que é o Vende Agora?",
+    text: "O Sistema PDV (Ponto de Venda) foi criado para modernizar e simplificar a gestão de vendas em pequenos e médios negócios, respondendo à realidade local de estabelecimentos que precisam de eficiência sem complexidade técnica."
   },
   {
-    text: "Ideal para lojas, mercados, farmácias e pequenos comércios, ele oferece uma interface intuitiva, moderna ede fácil utilização, mesmo para usuários sem experiência técnica."
+    title: 'Missão',
+    text: "Desenvolver uma solução intuitiva, acessível e robusta para o comércio, que permita o controlo de vendas, gestão de produtos, relatórios e operações de caixa com facilidade."
   },
+  {
+    title: "Visão",
+    text: "Ser uma referência em sistemas de ponto de venda em Moçambique e outros países africanos, oferecendo tecnologia que fortaleça o pequeno empreendedor e promova o crescimento sustentável dos negócios locais."
+  }
 ];
 
-export const contact = {
+
+const contact = {
   tel: "+258 834-681-798",
   email: "fpscomerce@gmail.com",
   linkedin_img: "/images/linkedin.svg",
@@ -40,7 +47,7 @@ export const contact = {
   x: "https://x.com/MainatoFabiao"
 };
 
-export const report = [
+const report = [
   {
     text: "'Desde que começámos a usar este sistema, as nossas vendas ficaram muito mais organizadas. O controlo de estoque e os relatórios em PDF são uma mais-valia para o nosso negócio.'",
     author: "- Júlio Macano, Dono de Mercearia em Matola"
@@ -55,11 +62,36 @@ export const report = [
   },
 ];
 
-export const title = {
+const title = {
     about: "Sobre o Vende Agora",
     resources: "Principais Recursos",
     report: "Acompanhe Alguns Relatos",
     contact: "Fale Conosco"
 };
 
-export default resourcesData;
+const social =[
+  {
+    imgPath: "/images/linkedin.svg",
+    alt: "LinkedIn",
+    url: "https://www.linkedin.com/in/fabiao-chirindza-mainato/"
+  },
+  {
+    imgPath: "/images/whatsapp.svg",
+    alt: "Whatsapp",
+    url: "https://wa.me/258847455300?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20sistema%20pdv."
+  },
+  {
+    imgPath: "/images/x.svg",
+    alt: "X",
+    url: "https://x.com/MainatoFabiao"
+  }
+]
+
+export default {
+  resourcesData,
+  about,
+  contact,
+  report,
+  title,
+  social
+};

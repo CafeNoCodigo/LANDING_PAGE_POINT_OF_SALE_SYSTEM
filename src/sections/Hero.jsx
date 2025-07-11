@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+
 const Hero = () => {
   const handleClick = () => {
     const section = document.getElementById("about");

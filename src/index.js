@@ -130,7 +130,6 @@ const pricingPlans = [
   }
 ];
 
-
 export default {
   resourcesData,
   about,

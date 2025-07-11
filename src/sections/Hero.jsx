@@ -51,7 +51,7 @@ const Hero = () => {
                   onClick={handleClick}
                   className="btn 
                     tracking-tight
-                    mb-15 ml-10 md:ml-0
+                    mb-15
                     md:pt-5 pt-4 md:pb-5 pb-4 
                     md:px-35 px-15 
                     md:text-3xl text-xl 

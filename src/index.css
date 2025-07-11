@@ -6,8 +6,8 @@
     --bg-geral: #125770;
     --bg-secundary: #3fa2b7;
     --element-decoration: #3fa2b7;
-    --navBar-color: rgba(0, 0, 0, 0.459);
     --element-decoration-hover: #307888;
+    --bg-geral-nav: rgba(18, 87, 112, 0.5);
 }
 
 html,
@@ -57,15 +57,12 @@ section {
     /*NavBar layer components Starts*/
     .nav-bar {
         @apply fixed flex md:flex-row items-center justify-center
-        md:gap-5 md:w-4/5 w-full md:transform md:-translate-x-1/2
-        md:h-15 h-20  md:mt-7 md:p-2 p-5
-        md:left-1/2 md:rounded-3xl
+        md:gap-5 w-full
+        h-20 md:p-2 p-5 
       text-amber-100
-        md:border
-        z-9999
-      border-black    
+        z-9999   
         backdrop-blur-sm;
-        background-color: var(--navBar-color);
+        background-color: var(--bg-geral-nav);
     }
 
     .nav-bar-a {

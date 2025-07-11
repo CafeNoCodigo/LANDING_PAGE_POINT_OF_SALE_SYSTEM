@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { title, report } from '../index'
+import { useState } from 'react';
+import data from '../index';
 
 const Report = () => {
     const [hoveredIndex, setHoveredIndex] = useState( null );
@@ -19,9 +19,9 @@ const Report = () => {
         alt="Element decoration blue" />
         
         <div>
-            <h1 className='h1 mb-10 text-center text-shadow-lg'>{ title.report }</h1>
+            <h1 className='h1 mb-10 text-center text-shadow-lg'>{ data.title.report }</h1>
             <div className='md:flex'>
-                { report.map((resource, index) =>
+                { data.report.map((resource, index) =>
                     <div key={ index }
                     className={`report-info transition-all duration-500 ease-in-out
                         ${ hoveredIndex !== null && hoveredIndex !== index ? "md:scale-95 md:opacity-40" : "opacity-100 scale-100"}`}

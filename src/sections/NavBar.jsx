@@ -1,5 +1,3 @@
-import React from 'react'
-
 const NavBar = () => {
   return (
     <div className='nav-bar bg-[rgba(0, 0, 0, 0.5)]'>

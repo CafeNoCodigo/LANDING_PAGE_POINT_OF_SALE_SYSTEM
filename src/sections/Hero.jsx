@@ -15,17 +15,6 @@ const Hero = () => {
         className='element-decoration rotate-55 md:ml-0 ml-[-100px] mt-100 md:mt-120
           md:hover:rotate-255 transition-all duration-750 ease-in-out' 
         alt="Element decoration yellow" />
-
-        <img 
-        src="/images/bg-element-blue.png"
-        className='element-decoration rotate-105 md:ml-250 ml-[-100px] mt-100 md:mt-150
-          md:hover:rotate-305 transition-all duration-750 ease-in-out hidden md:block' 
-        alt="Element decoration blue" />
-
-        <img src="/images/bg-element-blue.png" 
-        alt="Element decoration blue"
-        className='element-decoration rotate-245 md:ml-70 ml-70 mt-30 md:mt-5
-          md:hover:rotate-45 transition-all duration-750 ease-in-out' />
         <div className='section-layout md:gap-3 md:pt-25 pt-10 relative'>
               <motion.div
                 className='section-txt mt-10'

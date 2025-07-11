@@ -4,17 +4,32 @@
 
 <p align="center">🛒 POS (Point of Sale System)</p>
 
-<p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM">
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM">
-  <a href="https://github.com/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM">
-  </a>
-  <a href="https://github.com/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM">
-  </a>
-  <img alt="GitHub" src="https://img.shields.io/github/license/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM">
-</p>
+<div align="center" style="background-color:#1e1e1e; padding: 25px; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+
+  <p>
+    <img alt="🖥️ Linguagem principal" src="https://img.shields.io/github/languages/top/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM?style=for-the-badge&color=orange">
+    <img alt="📦 Tamanho do repositório" src="https://img.shields.io/github/repo-size/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM?style=for-the-badge&color=blue">
+    <a href="https://github.com/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM/commits/master">
+      <img alt="🕒 Último commit" src="https://img.shields.io/github/last-commit/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM?style=for-the-badge&color=brightgreen">
+    </a>
+    <a href="https://github.com/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM/issues">
+      <img alt="🐞 Issues" src="https://img.shields.io/github/issues/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM?style=for-the-badge&color=yellow">
+    </a>
+    <a href="https://github.com/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM/blob/master/LICENSE">
+      <img alt="📝 Licença" src="https://img.shields.io/github/license/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM?style=for-the-badge&color=green">
+    </a>
+  </p>
+
+  <p>
+    <img alt="🧪 Linguagens usadas" src="https://img.shields.io/github/languages/count/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM?style=for-the-badge&color=purple">
+    <a href="https://github.com/cafenocodigo/LANDING_PAGE_POINT_OF_SALE_SYSTEM/search?l=">
+      <img alt="📊 Ver todas as linguagens" src="https://img.shields.io/badge/📊_Ver_todas_as_linguagens-GitHub-gray?style=for-the-badge">
+    </a>
+  </p>
+
+</div>
+
+
 
 <p align="center">
   <a href="#-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;

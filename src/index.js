@@ -66,26 +66,70 @@ const title = {
     about: "Sobre o Vende Agora",
     resources: "Principais Recursos",
     report: "Acompanhe Alguns Relatos",
-    contact: "Fale Conosco"
+    contact: "Fale Conosco",
+    pricing: "Planos Flexiveis para Cada Necessidade"
 };
 
 const social =[
   {
-    imgPath: "/images/linkedin.svg",
+    imgPath: "/images/linkedin_blue.svg",
     alt: "LinkedIn",
     url: "https://www.linkedin.com/in/fabiao-chirindza-mainato/"
   },
   {
-    imgPath: "/images/whatsapp.svg",
+    imgPath: "/images/whatsapp_blue.svg",
     alt: "Whatsapp",
     url: "https://wa.me/258847455300?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20sistema%20pdv."
   },
   {
-    imgPath: "/images/x.svg",
+    imgPath: "/images/x_blue.svg",
     alt: "X",
     url: "https://x.com/MainatoFabiao"
   }
-]
+];
+
+const pricingPlans = [
+  {
+    nome: "Grátis",
+    preco: "0 MT/mês",
+    destaque: false,
+    descricao: "Ideal para pequenos negócios que desejam experimentar um sistema de ponto de venda simples e funcional.",
+    beneficios: [
+      "Até 50 registros por mês",
+      "Sem Relatório",
+      "Uso com logo próprio",
+      "Recursos básicos de venda"
+    ],
+    botao: "Começar Agora"
+  },
+  {
+    nome: "Pro",
+    preco: "500 MT/mês",
+    destaque: true,
+    descricao: "Perfeito para negócios em crescimento que precisam de mais capacidade e funcionalidades avançadas.",
+    beneficios: [
+      "Até 200 registros por mês",
+      "Automação de processos",
+      "Relatórios de vendas",
+      "Suporte prioritário"
+    ],
+    botao: "Escolher Plano Pro"
+  },
+  {
+    nome: "Premium",
+    preco: "1.000 MT/mês",
+    destaque: false,
+    descricao: "Plano completo para empresas que exigem controle total das operações, equipe e performance financeira.",
+    beneficios: [
+      "Registros Ilimitados por mês",
+      "Múltiplos usuários",
+      "Relatórios financeiros detalhados",
+      "Integrações avançadas"
+    ],
+    botao: "Contactar Vendas"
+  }
+];
+
 
 export default {
   resourcesData,
@@ -93,5 +137,6 @@ export default {
   contact,
   report,
   title,
-  social
+  social,
+  pricingPlans
 };

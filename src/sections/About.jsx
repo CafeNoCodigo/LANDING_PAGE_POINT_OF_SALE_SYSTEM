@@ -36,7 +36,7 @@ const  About = () => {
                             </div>
                         ))}
                     </div>
-                <button className='btn p-5 pl-10 pr-10 glow-hover text-2xl'>Baixar Demo</button>
+                <button className='btn p-5 pl-10 pr-10 glow-hover text-2xl rounded-lg'>Baixar Demo</button>
             </div>
         </div>
     </section>

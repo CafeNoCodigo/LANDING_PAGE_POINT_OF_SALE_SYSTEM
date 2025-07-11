@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   const handleClick = () => {
-    const section = document.getElementById("about");
+    const section = document.getElementById("plans");
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
@@ -50,12 +50,14 @@ const Hero = () => {
                   transition={{ duration: 2, ease: "easeOut", delay: 1}}
                   onClick={handleClick}
                   className="btn 
+                    tracking-tight
                     mb-15 ml-10 md:ml-0
                     md:pt-5 pt-4 md:pb-5 pb-4 
                     md:px-35 px-15 
                     md:text-3xl text-xl 
-                    glow-hover">
-                      Saiba Mais
+                    glow-hover
+                    rounded-lg">
+                      Começar Gratuitamente
                   </motion.button>
               </motion.div>
             <div className='hero-img group relative'>
@@ -75,15 +77,19 @@ const Hero = () => {
                 animate={{ scale: 1.2, opacity: 0.6 }}
                 transition={{ duration: 2, ease: "easeOut", delay: 2.3 }}/>
               <motion.img 
-                className="md:ml-6 md:mt-7 
+                className="
+                  w-4/5 max-w-xs md:max-w-md lg:max-w-lg
+                  mx-auto
+                  md:ml-6 md:mt-7 
                   relative 
                   z-[1] 
-                  scale-120" 
+                  scale-120
+                " 
                 src="/images/hero-img.png" 
                 alt="Tela Inicial da App"
                 initial={{ x: 500, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 2, ease: "easeOut", delay: 1.4 }}/>
+                transition={{ duration: 2, ease: 'easeOut', delay: 1.4 }}/>
             </div>
         </div>     
     </section>

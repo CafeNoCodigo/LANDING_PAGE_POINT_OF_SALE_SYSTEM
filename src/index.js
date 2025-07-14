@@ -41,7 +41,7 @@ export const contact = {
   whatsapp_img: "/images/whatsapp.svg",
   x_img: "/images/x.svg",
   img: "/images/contact-img.png",
-  whatsapp: "https://wa.me/258847455300?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20sistema%20pdv.",
+  whatsapp: "https://wa.me/258847455300?text=Olá,%20vi%20o%20seu%20site%20referente%20ao%20sistema%20de%20pagamentos%20e%20gostaria de%20saber%20mais%20sobre%20os%20seus%20serviços.",
   linkedin: "https://www.linkedin.com/in/fabiao-chirindza-mainato/",
   x: "https://x.com/MainatoFabiao"
 };
@@ -99,7 +99,8 @@ const pricingPlans = [
       "Uso com logo próprio",
       "Recursos básicos de venda"
     ],
-    botao: "Começar Agora"
+    botao: "Começar Agora",
+    url: 'https://wa.me/258847455300?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20pacote%20grátis.'
   },
   {
     nome: "Pro",
@@ -112,7 +113,8 @@ const pricingPlans = [
       "Relatórios de vendas",
       "Suporte prioritário"
     ],
-    botao: "Escolher Plano Pro"
+    botao: "Escolher Plano Pro",
+    url: 'https://wa.me/258847455300?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20pacote%20Pro.'
   },
   {
     nome: "Premium",
@@ -125,7 +127,8 @@ const pricingPlans = [
       "Relatórios financeiros detalhados",
       "Integrações avançadas"
     ],
-    botao: "Contactar Vendas"
+    botao: "Contactar Vendas",
+    url: 'https://wa.me/258847455300?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20pacote%20Premium.'
   }
 ];
 

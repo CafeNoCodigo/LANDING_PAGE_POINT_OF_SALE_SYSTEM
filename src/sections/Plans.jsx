@@ -54,7 +54,7 @@ const Plans = () => {
                   </li>
                 ))}
               </ul>
-              <button
+              <a href={ item.url } target='_blank'><button
                 className={`
                   btn
                   px-6 py-2
@@ -66,7 +66,7 @@ const Plans = () => {
                 `}
               >
                 {item.botao}
-              </button>
+              </button></a>
             </div>
           ))}
         </div>
